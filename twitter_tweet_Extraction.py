@@ -7,16 +7,6 @@ import pandas as pd
 import shutil
 import re
 ####input your credentials here
-#Rakesh Access Keys
-consumer_key = 'P3bEE8Y32TPgxJi9WmBDdunBq'
-consumer_secret = 'nUpIaP4COuOjVEva97zVhTcZaRgyb5HuRf6IESIOmLmCMcEoMU'
-access_token = '1504203727196114955-i9rffWfgWHORCuVkYBKwKXOVIoEWgr'
-access_token_secret = 'OY7xarccu69Bhxvao7ZfgTXudKadJDuMGrfM3JHA7B87X'
-
-# consumer_key = 'mGEigvVaEmKb2hvHRLRDZIAO7'
-# consumer_secret = 'Ggfu91IRh4Vd5Ljc4i7gOtUzMbT6o7nGZLNOZCDYWLLN2nd8Ki'
-# access_token = '1505247723351592963-ikEDAJpJLmUgqeeASwFtF7J8VbnlNh'
-# access_token_secret = 'HLGDd2QakieiUtiFonY3CNTO275Mokjfjft2bUImQIqav'
 
 
 def getTweets(stock):
