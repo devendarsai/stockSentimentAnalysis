@@ -1,0 +1,235 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+body {
+  /* font-family: Helvetica, Arial, sans-serif; */
+  background-color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 1px;
+  font-family: "Raleway", cursive;
+  font-weight: 100;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to right, black, #eee, black);
+  white-space: nowrap;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 600px;
+  margin-left: -300px;
+  margin-top: -220px;
+  height: 600px;
+  z-index: -1;
+}
+h1 a {
+  background: black;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  letter-spacing: 30px;
+  color: white;
+  animation: comein 1.5s 1 ease-in-out forwards;
+}
+
+@keyframes comein {
+  0% {
+    letter-spacing: 80px;
+    color: rgba(255, 255, 255, 0);
+  }
+  70% {
+    letter-spacing: 20px;
+  }
+  100% {
+    letter-spacing: 25px;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+p {
+  color: white;
+  text-align: center;
+}
+.center {
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+}
+.form-body {
+  font-size: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  margin: 0;
+  display: grid;
+  height: 10%;
+  place-items: center;
+}
+.c-formContainer,
+.c-form {
+  width: 44em;
+  height: 6.25em;
+}
+.c-formContainer {
+  position: relative;
+  font-weight: 700;
+}
+
+.c-form {
+  position: absolute;
+  border-radius: 6.25em;
+  background-color: #111;
+  transition: 0.2s;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.879);
+}
+.c-form {
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.625em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+/* .c-form:hover {
+  background-color: #6b6b6b;
+} */
+.c-form__input,
+.c-form__button {
+  font: inherit;
+  border: 0;
+  outline: 0;
+  border-radius: 5em;
+  box-sizing: border-box;
+}
+.c-form__input {
+  font-size: 3em;
+  transform: scale(0.7);
+  transition: 0s;
+}
+.c-form__input {
+  color: white;
+  background-color: inherit;
+  height: 100%;
+  width: 100%;
+  padding: 0 0.714em;
+}
+
+.c-form__button {
+  font-size: x-large;
+  color: inherit;
+  padding: 0;
+  height: 100%;
+  width: 10em;
+  background-color: rgb(42, 210, 107);
+}
+
+.c-form__button:hover,
+.c-form__button:focus {
+  background-color: rgb(2, 240, 58);
+  box-shadow: 0 0.5em 0.5em -0.4em #48ff00;
+  transform: translateY(-0.125em);
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  background: black;
+  padding: 10px 0;
+}
+
+span {
+  width: 50px;
+  height: 50px;
+  background: black;
+}
+
+.c-form:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 6.25em;
+}
+
+.c-form:active {
+  color: #000;
+}
+
+.c-form:active:after {
+  background: transparent;
+}
+
+.c-form:hover:before {
+  opacity: 1;
+}
+
+.c-form:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 6.25em;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
