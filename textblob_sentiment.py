@@ -13,6 +13,8 @@ from PIL import Image
 import numpy as np
 import re;
 import nltk
+nltk.download('stopwords', download_dir='./nltk_data/')
+nltk.download('wordnet', download_dir='./nltk_data/')
 nltk.data.path.append("./nltk_data/")
 from nltk.tokenize import word_tokenize
 from nltk import pos_tag
