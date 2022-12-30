@@ -13,6 +13,7 @@ from PIL import Image
 import numpy as np
 import re;
 import nltk
+nltk.download('averaged_perceptron_tagger', download_dir='./nltk_data/')
 nltk.download('sentiwordnet', download_dir='./nltk_data/')
 nltk.download('punkt', download_dir='./nltk_data/')
 nltk.download('stopwords', download_dir='./nltk_data/')
