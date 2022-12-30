@@ -5,3 +5,13 @@ itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 Werkzeug==1.0.1
+pandas==1.5.2
+jsonlib==1.6.1
+matplotlib==3.6.2
+regex==2022.10.31
+nltk==3.8
+yfinance==0.2.3
+textblob==0.17.1
+vaderSentiment==3.3.2
+seaborn==0.12.1
+numpy==1.24.1
