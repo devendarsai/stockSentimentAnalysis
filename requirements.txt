@@ -6,7 +6,6 @@ Jinja2==2.11.3
 MarkupSafe==1.1.1
 Werkzeug==1.0.1
 pandas==1.5.2
-jsonlib==1.6.1
 matplotlib==3.6.2
 regex==2022.10.31
 nltk==3.8
