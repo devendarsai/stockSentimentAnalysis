@@ -11,7 +11,7 @@ import re
 consumer_key = 'sWvBcgILoJksPzOdTkF94IXvJ'
 consumer_secret = 'l6h04lfg4feggtmhAREXlWwrikSUKBq4SnPoVPBYZphhxejfUW'
 access_token = '980294852-GMaCWH39FfSjCUtkGwzXUHKNz0JjQizybh2GifeY'
-access_token = 'UrNT8UvuoAEHUfEKZFMdLTXsccoN71MzgcpAjvwM1bYQo'
+access_token_secret = 'UrNT8UvuoAEHUfEKZFMdLTXsccoN71MzgcpAjvwM1bYQo'
 
 def getTweets(stock):
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
