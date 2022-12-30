@@ -53,8 +53,8 @@ if __name__ == "__main__":
         data = f.read()
     stocksDB = json.loads(data)
     # app.run(port = 81, debug=True)
-    app.run(debug=True, port=os.getenv("PORT", default=5000))
-    
+    # app.run(debug=True, port=os.getenv("PORT", default=5000))
+    app.run(host="0.0.0.0", debug=True, port=os.getenv("PORT", default=5000))
     if stocksDB:
         a_file = open("stockDB.json", "w")
         json.dump(stocksDB, a_file)
