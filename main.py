@@ -1,4 +1,4 @@
-import flask
+# import flask
 from flask import Flask,jsonify, request, render_template
 from twitter_tweet_Extraction import getTweets
 from getSentiment import getSentiment
