@@ -8,11 +8,6 @@ import shutil
 import re
 ####input your credentials here
 
-consumer_key = 'sWvBcgILoJksPzOdTkF94IXvJ'
-consumer_secret = 'l6h04lfg4feggtmhAREXlWwrikSUKBq4SnPoVPBYZphhxejfUW'
-access_token = '980294852-GMaCWH39FfSjCUtkGwzXUHKNz0JjQizybh2GifeY'
-access_token_secret = 'UrNT8UvuoAEHUfEKZFMdLTXsccoN71MzgcpAjvwM1bYQo'
-
 def getTweets(stock):
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
